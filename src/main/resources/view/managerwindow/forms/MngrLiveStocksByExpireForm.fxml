@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="smwlsbrcpopupcontext" prefHeight="732.0" prefWidth="1382.0" style="-fx-background-color: rgba(125, 147, 197, 1);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sevonholdings.controllers.managerwindow.forms.MngrLiveStocksByExpireFormController">
+   <children>
+      <JFXScrollPane layoutX="3.0" layoutY="18.0" prefHeight="698.0" prefWidth="1372.0">
+         <children>
+            <TableView fx:id="smwlsbrctbl" prefHeight="465.0" prefWidth="786.0">
+               <columns>
+                  <TableColumn fx:id="colbiscuitno" prefWidth="73.33331298828125" text="BiscuitNo" />
+                  <TableColumn fx:id="colbiscuitimage" prefWidth="170.0" />
+                  <TableColumn fx:id="colprogress" minWidth="0.0" prefWidth="109.0" text="Progress" />
+                  <TableColumn fx:id="colbrand" prefWidth="99.0" text="Brand" />
+                  <TableColumn fx:id="colsize" minWidth="8.0" prefWidth="86.0" text="Size" />
+                  <TableColumn fx:id="colqty" minWidth="6.0" prefWidth="124.0" text="Qty-Available" />
+                  <TableColumn fx:id="colmfd" minWidth="0.0" prefWidth="140.0" text="MFD" />
+                  <TableColumn fx:id="colexd" minWidth="0.0" prefWidth="153.0" text="EXD" />
+                  <TableColumn fx:id="colroomid" minWidth="0.0" prefWidth="224.0" text="RoomId" />
+                  <TableColumn fx:id="colremainingid" minWidth="0.0" prefWidth="189.0" text="ReaminingDays" />
+               </columns>
+            </TableView>
+         </children>
+      </JFXScrollPane>
+   </children>
+</AnchorPane>

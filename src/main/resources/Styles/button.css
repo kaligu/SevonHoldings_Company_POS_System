@@ -1,0 +1,291 @@
+#blue {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#5588ad, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #1d2e56);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 15.5px;
+}
+
+#purple {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#cbcad3, #868eb6),
+            linear-gradient(#dcdce8, #7c87ce),
+            linear-gradient(#b2abe7, #646da9);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 21px;
+    -fx-font-weight:bold;
+}
+
+#bluebutton {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7ebcea, #2f4b8f),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+}
+#bluebutton Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#bluebutton:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#395cab, #223768),
+            linear-gradient(#426ab7, #263e75),
+            linear-gradient(#7ebcea, #2f4b8f);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight:bold;
+}
+
+#redbutton {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#efa9a9, #a46161),
+            linear-gradient(#d76e6e, #9a4747),
+            linear-gradient(#ee3131, #7a0808);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 15.5px;
+}
+#redbutton Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#redbutton:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#ee3131, #7a0808),
+            linear-gradient(#d76e6e, #933c3c),
+            linear-gradient(#efa9a9, #a46161);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight:bold;
+}
+
+#purplebutton {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#d5a4f3, #652b96),
+            linear-gradient(#9362b4, #531981),
+            linear-gradient(#7024ab, #3f105b);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+#purplebutton Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#purplebutton:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7024ab, #652b96),
+            linear-gradient(#9362b4, #531981),
+            linear-gradient(#d5a4f3, #3f105b);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 21px;
+    -fx-font-weight:bold;
+}
+
+#midpanslectbutton {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#d5a4f3, #652b96),
+            linear-gradient(#9362b4, #531981),
+            linear-gradient(#7024ab, #81498c);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 100;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+#midpanslectbutton Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#midpanslectbutton:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#7d5b9b, #9a7cb4),
+            linear-gradient(#9362b4, #531981),
+            linear-gradient(#825ea9, #d5a4f3);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 60;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 21px;
+    -fx-font-weight:bold;
+}
+
+#savebutton {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#44ff00, #7bb073),
+            linear-gradient(#5daf5a, #197729),
+            linear-gradient(#33ec49, #007200);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 15.5px;
+}
+#savebutton Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+#savebutton:hover {
+    -fx-background-color:
+            #000000,
+            linear-gradient(#004808, #002500),
+            linear-gradient(#40ad01, #00460d),
+            linear-gradient(#b3e194, #127a00);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight:bold;
+}
+
+#textfields {
+    -fx-background-color:
+            #021138,
+            linear-gradient(#415f6e, #30454b);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#textfields Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(255, 255, 255, 0.8), 0, 0.0 , 0 , 0);
+}
+#textfields:focused {
+    -fx-background-color:
+            #011a3d,
+            linear-gradient(#517486, #30454b);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight:bold;
+}
+
+#buttontextfields {
+    -fx-background-color:
+            #021138,
+            linear-gradient(#415f6e, #30454b);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+}
+#buttontextfields Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(255, 255, 255, 0.8), 0, 0.0 , 0 , 1);
+}
+#buttontextfields:hover {
+    -fx-background-color:
+            #011a3d,
+            linear-gradient(#74a5be, #768891);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight:bold;
+}
+
+.progress-bar .bar {
+    -fx-background-radius: 5;
+}
+.progress-bar .track {
+    -fx-background-radius: 5;
+}
+
+.progress-bar {
+    -fx-background-radius: 5;
+}
+
+
+.progress-indicator {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ProgressIndicatorSkin";
+}
+
+.progress-indicator .indicator {
+    -fx-background-color: #212f46;
+
+}
+
+.progress-indicator .progress {
+    -fx-background-insets: 0, 1;
+    -fx-padding: 0.75em; /* 9 */
+}
+
+/* TODO: scaling the shape seems to make it disappear */
+.progress-indicator:indeterminate .spinner {
+    -fx-padding: 0.833333em; /* 10 */
+}
+
+.progress-indicator .percentage {
+    -fx-font-size: 0.916667em; /* 11pt - 1 less than the default font */
+}
+
+.progress-indicator:disabled {
+    -fx-opacity: -fx-disabled-opacity;
+}
+
+#dashbackground {
+    -fx-background-color:
+            #398cc7,
+            linear-gradient(#2f8dc7, #0074d2),
+            linear-gradient(#426ab7, #0099c9),
+            linear-gradient(#007bbd, #0054b4);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 12 30 12 30;
+    -fx-text-fill: white;
+    -fx-font-size: 15.5px;
+}
+.chart-pie-label {-fx-fill: #ffffff;}
+
+.chart > .chart-content > .chart-plot-background {
+    -fx-background-color: transparent;
+}
+.chart {
+    -fx-font-size:15;
+}
+.chart-content {
+    -fx-fill:white;
+}
+.axis{
+    -fx-tick-label-font-size: 0.7em;
+    -fx-tick-label-fill: white;
+}
+.text-area{
+    -fx-background-color: #7ebcea;
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="smwlsbrcmaincontext" maxHeight="645.0" maxWidth="598.0" minHeight="645.0" minWidth="598.0" opacity="0.88" prefHeight="645.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sevonholdings.controllers.managerwindow.forms.MngrLiveStocksByRoomFormController">
+   <children>
+      <AnchorPane fx:id="smwlsbrcloadingcontext" maxHeight="645.0" maxWidth="598.0" minHeight="645.0" minWidth="598.0" opacity="0.69" prefHeight="645.0" prefWidth="598.0" visible="false">
+         <children>
+            <ImageView fitHeight="248.0" fitWidth="304.0" layoutX="153.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/loadgif.gif" />
+               </image>
+            </ImageView>
+            <ProgressBar fx:id="smwlsbrcprogrsbar" layoutX="42.0" layoutY="504.0" prefHeight="33.0" prefWidth="522.0" />
+            <ImageView fitHeight="23.0" fitWidth="66.0" layoutX="203.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/companylogo.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="264.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 22;" text="Loading... wait..." />
+         </children>
+      </AnchorPane>
+      <HBox fx:id="hbox1pbar" layoutX="-1.0" prefHeight="126.0" prefWidth="598.0" />
+      <HBox fx:id="hbox2pbar" layoutY="126.0" prefHeight="126.0" prefWidth="598.0" />
+      <HBox fx:id="hbox3pbar" layoutY="252.0" prefHeight="126.0" prefWidth="598.0" />
+      <HBox fx:id="hbox4pbar" layoutY="378.0" prefHeight="126.0" prefWidth="598.0" />
+      <HBox fx:id="hbox5pbar" layoutX="-1.0" layoutY="504.0" prefHeight="126.0" prefWidth="598.0" />
+      <HBox fx:id="hbox1lbl" layoutX="-1.0" prefHeight="126.0" prefWidth="598.0" />
+      <HBox fx:id="hbox2lbl" layoutY="126.0" prefHeight="126.0" prefWidth="598.0" />
+      <HBox fx:id="hbox3lbl" layoutY="252.0" prefHeight="126.0" prefWidth="598.0" />
+      <HBox fx:id="hbox4lbl" layoutY="378.0" prefHeight="126.0" prefWidth="598.0" />
+      <HBox fx:id="hbox5lbl" layoutY="504.0" prefHeight="126.0" prefWidth="598.0" />
+      <AnchorPane fx:id="smwlsbrcpopupcontext" layoutX="598.0" prefHeight="829.0" prefWidth="914.0" style="-fx-background-color: rgba(125, 147, 197, 1);">
+         <children>
+            <ScrollPane layoutX="8.0" layoutY="57.0" prefHeight="757.0" prefWidth="900.0">
+                  <TableView fx:id="smwlsbrctbl" prefHeight="534.0" prefWidth="900.0">
+                     <columns>
+                        <TableColumn fx:id="colbiscuitno" prefWidth="73.33331298828125" text="BiscuitNo" />
+                        <TableColumn fx:id="colbiscuitimage" prefWidth="176.0" />
+                        <TableColumn fx:id="colbrand" prefWidth="155.0" text="Brand" />
+                        <TableColumn fx:id="colsize" minWidth="8.0" prefWidth="107.0" text="Size" />
+                        <TableColumn fx:id="colqty" minWidth="6.0" prefWidth="129.0" text="Qty-Available" />
+                        <TableColumn fx:id="colmfd" minWidth="0.0" prefWidth="142.0" text="MFD" />
+                        <TableColumn fx:id="colexd" minWidth="5.0" prefWidth="143.0" text="EXD" />
+                     </columns>
+                  </TableView>
+            </ScrollPane>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="863.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/backbutton.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

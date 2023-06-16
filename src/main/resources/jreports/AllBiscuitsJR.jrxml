@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AllBiscuitsJR" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="252dacfc-50eb-46ad-b80b-604a746a037d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (13)"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT*FROM Biscuits;]]>
+	</queryString>
+	<field name="Biscuit_No" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Biscuit_No"/>
+		<property name="com.jaspersoft.studio.field.label" value="Biscuit_No"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="biscuits"/>
+	</field>
+	<field name="ImagePath" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ImagePath"/>
+		<property name="com.jaspersoft.studio.field.label" value="ImagePath"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="biscuits"/>
+	</field>
+	<field name="Biscuit_Range" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Biscuit_Range"/>
+		<property name="com.jaspersoft.studio.field.label" value="Biscuit_Range"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="biscuits"/>
+	</field>
+	<field name="Biscuit_Brand" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Biscuit_Brand"/>
+		<property name="com.jaspersoft.studio.field.label" value="Biscuit_Brand"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="biscuits"/>
+	</field>
+	<field name="Size" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Size"/>
+		<property name="com.jaspersoft.studio.field.label" value="Size"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="biscuits"/>
+	</field>
+	<field name="CBFVolume" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="CBFVolume"/>
+		<property name="com.jaspersoft.studio.field.label" value="CBFVolume"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="biscuits"/>
+	</field>
+	<field name="SupplierPrice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SupplierPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="SupplierPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="biscuits"/>
+	</field>
+	<field name="DistributorPrice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="DistributorPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="DistributorPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="biscuits"/>
+	</field>
+	<field name="MRPrice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="MRPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="MRPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="biscuits"/>
+	</field>
+	<group name="Biscuit_No">
+		<groupExpression><![CDATA[$F{Biscuit_No}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="128" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="199" height="120" uuid="727c2845-1e7a-4c7f-a8de-72476f7c84a7"/>
+				<imageExpression><![CDATA["D:/My Project/sevonholdings1.2 (6)/sevonholdings1.2/sevonholdings/src/lk/sevonholdings/view/images/companylogo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="80" width="170" height="30" uuid="3cd3aa82-5238-465f-93d2-c9a72f71768d"/>
+				<textElement>
+					<font size="12" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Inspiring goodness...]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="20" width="216" height="16" uuid="fb65beec-b9b8-4ae4-8929-473924f36663"/>
+				<text><![CDATA[Thudugala Junction,Dodangoda,Kalutara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="36" width="258" height="18" uuid="8f11c657-6a45-4396-8fed-643025438b76"/>
+				<text><![CDATA[T:+94115555000, +94112738551 F:+941127139232]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="50" width="239" height="15" uuid="854fe491-ce44-4b59-9ec0-d04bb7b1497f"/>
+				<text><![CDATA[E:cic@malibangroup.lk   W:www.malibangroup.lk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="70" width="195" height="15" uuid="d346aee8-339a-4a99-8fc9-a3bd49a196d4"/>
+				<text><![CDATA[VAT Reg No: 1040138057000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="101" width="196" height="18" uuid="20695eec-fd91-4b2e-94cf-7228a5454f6e"/>
+				<textElement>
+					<font size="13" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[All Biscuits]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="58" splitType="Stretch">
+			<line>
+				<reportElement x="74" y="0" width="1" height="52" uuid="4a2c99c8-04cd-4a36-98e0-779fc956c30e"/>
+			</line>
+			<line>
+				<reportElement x="0" y="52" width="555" height="1" uuid="6fd4bf01-8b1f-498b-9371-7e31a1f93f62"/>
+			</line>
+			<line>
+				<reportElement x="130" y="0" width="1" height="52" uuid="f85a0e9e-946e-4b56-b9b2-f840e4cb2454"/>
+			</line>
+			<line>
+				<reportElement x="199" y="0" width="1" height="52" uuid="ef430801-f468-4540-ad2a-adff921145ef"/>
+			</line>
+			<line>
+				<reportElement x="279" y="0" width="1" height="52" uuid="72fb5933-67ed-42fc-be8c-9cb9bc924a6c"/>
+			</line>
+			<line>
+				<reportElement x="340" y="0" width="1" height="52" uuid="7652cef2-792d-412e-a523-c5df94e04cd9"/>
+			</line>
+			<line>
+				<reportElement x="410" y="0" width="1" height="52" uuid="6144c597-0377-4cf7-bbdb-cfa128d0e22b"/>
+			</line>
+			<line>
+				<reportElement x="470" y="0" width="1" height="52" uuid="fee0b947-3a30-4d5b-a52b-a6bebb9c65ca"/>
+			</line>
+			<line>
+				<reportElement x="2" y="0" width="555" height="1" uuid="d3fd7b8b-4478-4041-8065-35b9c749537e"/>
+			</line>
+			<line>
+				<reportElement x="557" y="0" width="1" height="52" uuid="ce6e29e8-e7ae-4a97-8494-abab46505587"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-1" width="1" height="52" uuid="a4e3e301-c745-4ad3-9a3a-48cdf797b62b"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="10" width="64" height="30" uuid="6626f3e5-3519-4301-880a-3c193ac53c24">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="da6d4829-bf70-4e0c-a7f6-209b2d2f5ad5"/>
+				</reportElement>
+				<text><![CDATA[Biscuit_No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="11" width="51" height="30" uuid="fe1fd04a-9e6f-4102-a75c-2e560fcfe574">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f6058e63-c684-443a-a991-8a91e80b1b68"/>
+				</reportElement>
+				<text><![CDATA[Biscuit_Range]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="14" width="60" height="30" uuid="3e7edd63-bc8a-4bbe-bc91-7b671df739e0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="723de3e9-0984-4db0-a452-c4074866871c"/>
+				</reportElement>
+				<text><![CDATA[Biscuit_Brand]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="14" width="70" height="30" uuid="e3f1e472-75a1-430a-94d3-92642419c7c6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="755cb3a5-0c4d-430e-8ecc-46d5dd39f488"/>
+				</reportElement>
+				<text><![CDATA[Size]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="10" width="58" height="30" uuid="8ead264e-e064-4d79-b5d5-3d6148a27c70">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3620621c-b2f9-4330-a8d3-5ed5569de78d"/>
+				</reportElement>
+				<text><![CDATA[CBFVolume]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="11" width="70" height="30" uuid="a9b8396c-e875-4941-a9a6-76627c4e94ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eccddb80-006d-46eb-a649-9c04a96a179c"/>
+				</reportElement>
+				<text><![CDATA[SupplierPrice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="419" y="10" width="48" height="30" uuid="a07dd758-9939-4150-802b-a8e15d574f33">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3762c74c-4ff0-477a-abe5-e882c5288e06"/>
+				</reportElement>
+				<text><![CDATA[DistributorPrice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="14" width="75" height="30" uuid="97939ae8-2abd-46ef-b304-dda168d0967c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="322e71af-010a-48eb-8513-7eab62b69b0f"/>
+				</reportElement>
+				<text><![CDATA[MRPrice]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<line>
+				<reportElement x="74" y="0" width="1" height="30" uuid="cc1a2c7f-b53a-47b9-ab34-b193cc7a9d1e">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="0" y="30" width="555" height="1" uuid="7e1d96fa-db73-4f55-a8ff-c546db4bbe79"/>
+			</line>
+			<line>
+				<reportElement x="411" y="0" width="1" height="30" uuid="d95d9794-09ed-4edb-aaae-596686b22e15">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="340" y="0" width="1" height="30" uuid="c62209cc-714f-4d86-b599-1099a75527ab">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="279" y="0" width="1" height="30" uuid="f8b708c5-15e7-4350-a1dd-0acc9319ef90">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="199" y="0" width="1" height="30" uuid="a4360c06-24b7-405a-ba37-1a4a5375545a">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="130" y="0" width="1" height="30" uuid="12358658-a6ec-4250-b07d-8985af4bc3dd">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="470" y="0" width="1" height="30" uuid="9a5b934b-b397-4428-89fa-3de1e63ffad6">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="10" y="1" width="64" height="30" uuid="e735f4ea-639c-4699-8ef6-a4b9a644c951">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="da6d4829-bf70-4e0c-a7f6-209b2d2f5ad5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Biscuit_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="4" width="50" height="23" uuid="9fc26c98-2d37-4279-98c6-d23ad3b78c52">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f6058e63-c684-443a-a991-8a91e80b1b68"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Biscuit_Range}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="1" width="60" height="30" uuid="c759bf75-fcd0-401f-b329-96fd18d94ed4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="723de3e9-0984-4db0-a452-c4074866871c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Biscuit_Brand}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="1" width="70" height="30" uuid="7ef4bbb5-21a2-4723-8945-22d4165fb11f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="755cb3a5-0c4d-430e-8ecc-46d5dd39f488"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Size}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="-3" width="51" height="30" uuid="2004b06f-5e97-4bb6-98a8-1179fcafe5e9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3620621c-b2f9-4330-a8d3-5ed5569de78d"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{CBFVolume}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="60" height="30" uuid="d26c77e6-96d5-493b-a67f-d949f65fc0c5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="eccddb80-006d-46eb-a649-9c04a96a179c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{SupplierPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="416" y="0" width="55" height="30" uuid="4f869c69-2319-4978-a6d5-860ecfad1166">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3762c74c-4ff0-477a-abe5-e882c5288e06"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{DistributorPrice}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="-3" width="76" height="30" uuid="6dcff1b6-4f24-46fd-98e1-a1d4606f18b0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="322e71af-010a-48eb-8513-7eab62b69b0f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{MRPrice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="156" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="30" y="124" width="100" height="13" uuid="6533f9f4-e3e4-430e-9657-0eed4b860b8f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="510" y="122" width="40" height="16" uuid="0977909a-a435-42bf-9074-f5bc6857ad20"/>
+				<text><![CDATA[Page:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="124" width="42" height="14" uuid="2a8be4e9-2b2c-4987-8ec6-eb6334039359"/>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="76" width="100" height="14" uuid="928d48e5-84d7-4f5d-900c-d6a0a9dcf479"/>
+				<text><![CDATA[Received By :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="100" height="16" uuid="58e318f9-1ba2-47b9-bb72-05c497d8b4d1"/>
+				<text><![CDATA[Signature:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="70" y="90" width="109" height="1" uuid="2eb9ca4c-5ce4-4429-b5c0-782fa60f3bdd"/>
+			</line>
+			<line>
+				<reportElement x="69" y="115" width="109" height="1" uuid="26c0592e-d257-42f0-b806-9c1f6836b151"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="50" width="100" height="14" uuid="1f57356c-d657-49f0-9ab0-761ad38a4a7a"/>
+				<text><![CDATA[Checked By :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="70" y="64" width="109" height="1" uuid="eae5aa00-914d-4999-9aa4-4fdc7c7c3626"/>
+			</line>
+			<textField>
+				<reportElement x="540" y="120" width="100" height="30" uuid="8f2cbd3d-ef01-45b4-a1d2-cb65c8e09bbc"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

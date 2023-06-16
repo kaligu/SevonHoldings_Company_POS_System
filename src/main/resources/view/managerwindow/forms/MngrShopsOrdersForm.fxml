@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.ScrollPane?>
+<AnchorPane fx:id="homemidpane" maxHeight="926.0" maxWidth="1719.0" prefHeight="926.0" prefWidth="1719.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.sevonholdings.controllers.managerwindow.forms.MngrShopsOrdersFormController">
+   <children>
+      <ImageView fitHeight="988.0" fitWidth="1719.0" layoutY="-1.0" opacity="0.88" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/mainwindowphoto.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="panecreateorder" layoutX="18.0" layoutY="13.0" prefHeight="893.0" prefWidth="1704.0">
+         <children>
+            <ScrollPane layoutX="18.0" layoutY="497.0" prefHeight="342.0" prefWidth="1386.0">
+                  <TableView fx:id="createtbl" onSort="#tblctOnAction" prefHeight="320.0" prefWidth="1467.0">
+                     <columns>
+                        <TableColumn fx:id="ccolorderid" prefWidth="117.00003051757812" text="Order ID" />
+                        <TableColumn fx:id="ccolbiscuitno" prefWidth="217.0" text="Biscuit No" />
+                        <TableColumn fx:id="ccolbrand" prefWidth="152.0" text="Brand" />
+                        <TableColumn fx:id="ccolsize" minWidth="0.0" prefWidth="192.0" text="size" />
+                        <TableColumn fx:id="ccolqty" prefWidth="181.0" text="QTY" />
+                        <TableColumn fx:id="ccolsuppliercost" prefWidth="199.0" text="Supplier Cost" />
+                        <TableColumn fx:id="ccoldistributorcost" prefWidth="173.0" text="Distributor Cost" />
+                        <TableColumn fx:id="ccolmrp" minWidth="0.0" prefWidth="153.0" text="MRP" />
+                     </columns>
+                  </TableView>
+            </ScrollPane>
+            <Text fill="WHITE" layoutX="16.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PickList." wrappingWidth="389.00423431396484">
+               <font>
+                  <Font name="System Italic" size="29.0" />
+               </font>
+            </Text>
+            <Button id="redbutton" layoutX="1496.0" layoutY="721.0" mnemonicParsing="false" onAction="#btnclearselectedrowOnAction" prefHeight="59.0" prefWidth="193.0" style="-fx-font-size: 15;" stylesheets="@../../../Styles/button.css" text="Clear Selected Row">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="redbutton" layoutX="1496.0" layoutY="780.0" mnemonicParsing="false" onAction="#btnClearAllRowsOnAction" prefHeight="59.0" prefWidth="193.0" style="-fx-font-size: 15;" stylesheets="@../../../Styles/button.css" text="Clear All Rows">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="savebutton" layoutX="1417.0" layoutY="521.0" mnemonicParsing="false" onAction="#CreatedMalibanOrderSaveOnDB" prefHeight="105.0" prefWidth="269.0" style="-fx-font-size: 22;" stylesheets="@../../../Styles/button.css" text="Create OrderList">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="35.0" layoutX="1423.0" layoutY="552.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/donesign.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="59.0" layoutX="1644.0" layoutY="3.0" onMouseClicked="#backtonhomeOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/backbutton.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="WHITE" layoutX="16.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtorderid" fill="#f5c4c4" layoutX="126.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OS120">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <AnchorPane fx:id="selectpanebiscuit" layoutX="18.0" layoutY="54.0" prefHeight="337.0" prefWidth="1335.0" style="-fx-background-color: #303561;">
+               <children>
+                  <ScrollPane fx:id="selecttblpane" layoutX="8.0" layoutY="12.0" prefHeight="313.0" prefWidth="1317.0">
+                        <TableView fx:id="tablbiscuits" onMouseClicked="#selectbiscuittblOnAction" prefHeight="610.0" prefWidth="1680.0">
+                           <columns>
+                              <TableColumn fx:id="colbiscuitsid" prefWidth="102.0" text="Biscuits Id" />
+                              <TableColumn fx:id="colpicture" prefWidth="196.0" text="Picture" />
+                              <TableColumn fx:id="colrange" prefWidth="95.0" text="Range" />
+                              <TableColumn fx:id="colbrandx" prefWidth="119.0" text="Brand" />
+                              <TableColumn fx:id="colsizex" prefWidth="124.0" text="Size" />
+                              <TableColumn fx:id="colcbfvolume" prefWidth="162.0" text="CBF Volume" />
+                              <TableColumn fx:id="colsupplierpric" prefWidth="194.0" text="Supplier Price" />
+                              <TableColumn fx:id="coldistributorpric" prefWidth="167.0" text="Distributor Price" />
+                              <TableColumn fx:id="colmrp" prefWidth="153.0" text="MRP" />
+                           </columns>
+                        </TableView>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <TextField id="textfields" fx:id="txtfldqty" layoutX="1519.0" layoutY="284.0" prefHeight="79.0" prefWidth="164.0" promptText="QTY" style="-fx-font-size: 20;" stylesheets="@../../../Styles/button.css" />
+            <Button id="bluebutton" layoutX="1371.0" layoutY="374.0" mnemonicParsing="false" onAction="#btnaddtolistOnAction" prefHeight="79.0" prefWidth="315.0" style="-fx-font-size: 22;" stylesheets="@../../../Styles/button.css" text="ADD To PickList">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="39.0" fitWidth="35.0" layoutX="1401.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/donesign.gif" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="16.0" layoutY="875.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Supplier Cost:" wrappingWidth="218.00000327825546">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="suppliercostlbl" fill="#fff400" layoutX="234.0" layoutY="878.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="433.0" layoutY="878.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Distributor Cost:" wrappingWidth="252.00000542402267">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="distributorcostlbl" fill="#fff400" layoutX="686.0" layoutY="878.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="927.0" layoutY="878.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total MRP:" wrappingWidth="129.00000327825546">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="mrplbl" fill="#fff400" layoutX="1056.0" layoutY="878.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="1169.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Biscuit Type Here" wrappingWidth="173.00423431396484">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Text>
+            <AnchorPane fx:id="confirmcreateorderwindow" layoutX="3.0" layoutY="8.0" opacity="0.84" prefHeight="899.0" prefWidth="1694.0" style="-fx-background-color: black;" visible="false">
+               <children>
+                  <ImageView fitHeight="325.0" fitWidth="346.0" layoutX="659.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/loadgif.gif" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="519.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure to Create Order To Maliban ?">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="520.0" layoutY="537.0" onAction="#btnOrderCreateOnlyOnAction" prefHeight="115.0" prefWidth="269.0" style="-fx-background-color: #73ad5e;" text="Create Only" textFill="WHITE">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="819.0" layoutY="537.0" onAction="#btnOrderCretateNPrintOnAction" prefHeight="115.0" prefWidth="280.0" style="-fx-background-color: #73ad5e;" text="Create &amp; Print" textFill="WHITE">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="819.0" layoutY="666.0" onAction="#btncancelorderconfirmwindowOnaction" prefHeight="59.0" prefWidth="280.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ComboBox id="textfields" layoutX="1378.0" layoutY="75.0" prefHeight="68.0" prefWidth="301.0" stylesheets="@../../../Styles/button.css" />
+            <ComboBox id="textfields" layoutX="1368.0" layoutY="154.0" prefHeight="68.0" prefWidth="301.0" stylesheets="@../../../Styles/button.css" />
+            <DatePicker layoutX="1379.0" layoutY="235.0" prefHeight="31.0" prefWidth="301.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="paneorderview" layoutX="17.0" layoutY="27.0" prefHeight="910.0" prefWidth="1706.0" visible="false">
+         <children>
+            <AnchorPane layoutX="352.0" layoutY="321.0" prefHeight="188.0" prefWidth="481.0" style="-fx-background-color: #1e2357;">
+               <children>
+                  <Button layoutX="19.0" layoutY="16.0" onAction="#getOrderOnaction" prefHeight="152.0" prefWidth="448.0" style="-fx-background-color: #73ad5e; -fx-background-radius: 15;" text="Get Order Report">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="856.0" layoutY="318.0" prefHeight="191.0" prefWidth="519.0" style="-fx-background-color: #1e2357;">
+               <children>
+                  <Button layoutX="20.0" layoutY="22.0" onAction="#getOrderdetailOnAction" prefHeight="143.0" prefWidth="482.0" style="-fx-background-color: #73ad5e; -fx-background-radius: 15;" text="Get Order Detail Report">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="45.0" fitWidth="59.0" layoutX="1640.0" layoutY="-10.0" onMouseClicked="#backtonhomeOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/backbutton.gif" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panenavigatebutons" layoutX="18.0" layoutY="25.0" prefHeight="893.0" prefWidth="1684.0" visible="false">
+         <children>
+            <Button id="midpanslectbutton" layoutX="363.0" layoutY="266.0" mnemonicParsing="false" onAction="#mainCreateOrderListOnAcition" prefHeight="337.0" prefWidth="451.0" style="-fx-font-size: 30;" stylesheets="@../../../Styles/button.css" text="Create OrderList" textAlignment="RIGHT">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="550.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/addproduct.png" />
+               </image>
+            </ImageView>
+            <Button id="midpanslectbutton" layoutX="909.0" layoutY="270.0" mnemonicParsing="false" onAction="#MainVieworderListOnaction" prefHeight="327.0" prefWidth="451.0" style="-fx-font-size: 30;" stylesheets="@../../../Styles/button.css" text="View OrdderList" textAlignment="RIGHT">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="105.0" fitWidth="196.0" layoutX="1080.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/all.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="21.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Manage" wrappingWidth="241.0042266845703">
+               <font>
+                  <Font name="System Italic" size="29.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="127.0" fitWidth="376.0" layoutX="407.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Maliban.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="127.0" fitWidth="376.0" layoutX="950.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/Maliban.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
