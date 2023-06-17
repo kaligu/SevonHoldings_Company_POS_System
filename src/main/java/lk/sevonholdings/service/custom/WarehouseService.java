@@ -10,12 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface WarehouseService extends SuperService {
-    boolean saveWarehouse(WarehouseDTO warehouseDTO);
     List<WarehouseDTO> findAllWarehouse();
     String findLastWarehouseRoomNo();
+
+    boolean saveWarehouse(WarehouseDTO warehouseDTO);
     boolean deleteWarehouseRoomPK(String pk);
+
     ArrayList<LiveStocksByRoomsUsingRoomIdTm1> showLiveStocksByRoomsUsingRoomId(String roomid);
     ArrayList<SubManagerWindowLiveStocksByExpireControllerTm1> showLiveStocksByExpire();
-
     ArrayList<Biscuits_brand_size_qtyDTO> showLiveStocks_OnlyBiscuitNameAndQty();
 }

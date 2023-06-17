@@ -201,11 +201,11 @@ public class MngrMainFormController {
     }
 
     public void exitActionClosebtn(MouseEvent mouseEvent) {
-        btnclosewindow.setImage(new Image("assets/greyclose.png"));
+//        btnclosewindow.setImage(new Image("/assets/greyclose.png"));
     }
 
     public void enterActionClosebtn(MouseEvent mouseEvent) {
-        btnclosewindow.setImage(new Image("assets/redclose.png"));
+//        btnclosewindow.setImage(new Image("/assets/redclose.png"));
     }
 
     public void btncloseOnAction(MouseEvent mouseEvent) {
@@ -260,17 +260,17 @@ public class MngrMainFormController {
 
     public void enterActionMaximizebtn(MouseEvent mouseEvent) {
         if(ismaximised) { //if maximised window
-            btnmaxwindow.setImage(new Image("assets/redmin.png"));
+//            btnmaxwindow.setImage(new Image("assets/redmin.png"));
         }else{
-            btnmaxwindow.setImage(new Image("assets/max.gif"));
+//            btnmaxwindow.setImage(new Image("assets/max.gif"));
         }
     }
 
     public void exitActionMaximizebtn(MouseEvent mouseEvent) {
         if(ismaximised) { //if maximised window
-            btnmaxwindow.setImage(new Image("assets/greymin.png"));
+//            btnmaxwindow.setImage(new Image("assets/greymin.png"));
         }else{
-            btnmaxwindow.setImage(new Image("assets/max.gif"));
+//            btnmaxwindow.setImage(new Image("assets/max.gif"));
         }
     }
 
@@ -279,11 +279,11 @@ public class MngrMainFormController {
     }
 
     public void enterActionMinimizebtn(MouseEvent mouseEvent) {
-        btnminwindow.setImage(new Image("assets/redminimize.png"));
+//        btnminwindow.setImage(new Image("assets/redminimize.png"));
     }
 
     public void exitActionMinimizebtn(MouseEvent mouseEvent) {
-        btnminwindow.setImage(new Image("assets/greyminimize.png"));
+//        btnminwindow.setImage(new Image("assets/greyminimize.png"));
     }
 
     public void btnhomeOnAction(MouseEvent mouseEvent) {

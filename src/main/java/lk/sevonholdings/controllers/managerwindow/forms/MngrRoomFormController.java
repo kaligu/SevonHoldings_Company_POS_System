@@ -130,6 +130,7 @@ public class MngrRoomFormController {
         );
         if(warehouseService.saveWarehouse(room)){
             new Alert(Alert.AlertType.INFORMATION,"New Warehouse room addeed Successfully.").show();
+            loadDataToTable();
         }else{
             new Alert(Alert.AlertType.WARNING,"Warehouse room not Added!.").show();
         }
@@ -300,7 +301,20 @@ public class MngrRoomFormController {
     }
 
     public void btnupdateOnAction(ActionEvent actionEvent) {
-        /*WarehouseRoom room = new WarehouseRoom(
+        WarehouseDTO room = new WarehouseDTO(
+                atxtfldroomid.getText(),
+                atxtfldescription.getText(),
+                Double.parseDouble(atxtfldmaxroomvolume.getText()),
+                Double.parseDouble(atxtfldfilledroomvolume.getText()),
+                atxtfldavailability.getText()
+        );
+        if(warehouseService.saveWarehouse(room)){
+            new Alert(Alert.AlertType.INFORMATION,"New Warehouse room addeed Successfully.").show();
+            loadDataToTable();
+        }else{
+            new Alert(Alert.AlertType.WARNING,"Warehouse room not Added!.").show();
+        }
+        WarehouseDTO room = new  WarehouseDTO(
                 dtxtfldroomid1.getText(),
                 dtxtfldescription1.getText(),
                 Double.parseDouble(dtxtfldmaxroomvolume1.getText()),
@@ -309,7 +323,7 @@ public class MngrRoomFormController {
         );
 
         try {
-            boolean isAdded = WarehouseRoomModel.update(room);
+            boolean isAdded = warehouseService.update(room);
             if(isAdded) {
                 new Alert(Alert.AlertType.CONFIRMATION, "Room Updated!").show();
                 tblroom.getItems().clear();
@@ -319,7 +333,7 @@ public class MngrRoomFormController {
             }
         } catch (SQLException | ClassNotFoundException e) {
             new Alert(Alert.AlertType.WARNING, e+"Try Again!").show();
-        }*/
+        }
     }
 
     public void dtxtfldroomidOnAction(ActionEvent actionEvent) {
@@ -338,7 +352,7 @@ public class MngrRoomFormController {
             }
         } catch (SQLException | ClassNotFoundException e) {
             new Alert(Alert.AlertType.WARNING, e+"Try Again!").show();
-        }*/
+        }
     }
 
     public void btnallroomjrViewOnAction(ActionEvent actionEvent) {
